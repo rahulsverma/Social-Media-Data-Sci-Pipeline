@@ -1,0 +1,10 @@
+<h1>Named Entities recognized from the Comments</h1>
+<img src='data:image/png;base64,{{ data }}'/>
+<p>Current Date-Time Range: {{daterange}}</p>
+<p>Enter New Date-Time Range here:</p> 
+<form action="{{ url_for("reddit_2")}}" method="post">
+    <input type="text" id="startdate" name="start" placeholder="StartDate">
+    <input type="text" id="enddate" name="end" placeholder="EndDate">
+    <button type="submit">Search</button>
+</form>
+<a href="/">Home</a>
